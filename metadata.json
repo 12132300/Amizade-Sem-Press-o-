@@ -1,0 +1,6 @@
+{
+  "name": "Amizade Sem Pressão — Kit Educativo Socioemocional",
+  "description": "Material educativo digital de educação socioemocional infantil (8 a 12 anos) com foco em amizade, limites, pressão dos colegas e como pedir ajuda.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
