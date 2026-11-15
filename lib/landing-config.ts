@@ -146,14 +146,14 @@ export function calculateBonusTotal(bonuses: BonusItem[]): string {
 export const LANDING_CONFIG = {
   // 0. RASTREAMENTO E CHECKOUT (Substitua apenas os valores abaixo quando desejar)
   tracking: {
-    metaPixelId: '', // Ex: '123456789012345'
+    metaPixelId: '1252002683687190',
     googleTagId: '', // Ex: 'G-XXXXXXXXXX' ou 'GTM-XXXXXXX'
   },
 
   checkout: {
     // Insira aqui o link real do seu checkout (Hotmart, Kiwify, Eduzz, Kirvano, etc.)
     // As UTMs da URL atual são anexadas automaticamente em todos os botões de compra.
-    url: 'https://pay.seucheckout.com.br/amizade-sem-pressao',
+    url: 'https://pay.wiapy.com/6af9c262a84994dd38ba3e35',
     placeholderNote: '[INSERIR LINK DO CHECKOUT]',
   },
 
@@ -507,4 +507,23 @@ export const LANDING_CONFIG = {
     disclaimer:
       'Recurso educativo autoral. Não substitui avaliação, acompanhamento psicológico ou protocolo clínico.',
   },
+
+  // 10. NOTIFICAÇÕES DE COMPRA NO RODAPÉ (15 nomes)
+  recentBuyers: [
+    { name: 'Mariana S.', location: 'São Paulo, SP', timeAgo: 'há 2 minutos' },
+    { name: 'Fernanda L.', location: 'Belo Horizonte, MG', timeAgo: 'há 4 minutos' },
+    { name: 'Carolina M.', location: 'Curitiba, PR', timeAgo: 'há 6 minutos' },
+    { name: 'Rafael T.', location: 'Porto Alegre, RS', timeAgo: 'há 8 minutos' },
+    { name: 'Juliana R.', location: 'Campinas, SP', timeAgo: 'há 11 minutos' },
+    { name: 'Patrícia A.', location: 'Rio de Janeiro, RJ', timeAgo: 'há 14 minutos' },
+    { name: 'Camila F.', location: 'Florianópolis, SC', timeAgo: 'há 17 minutos' },
+    { name: 'Rodrigo V.', location: 'Goiânia, GO', timeAgo: 'há 19 minutos' },
+    { name: 'Aline C.', location: 'Recife, PE', timeAgo: 'há 23 minutos' },
+    { name: 'Tatiane B.', location: 'Salvador, BA', timeAgo: 'há 26 minutos' },
+    { name: 'Daniela P.', location: 'Brasília, DF', timeAgo: 'há 29 minutos' },
+    { name: 'Luciana G.', location: 'Niterói, RJ', timeAgo: 'há 32 minutos' },
+    { name: 'Marcelo N.', location: 'Joinville, SC', timeAgo: 'há 35 minutos' },
+    { name: 'Vanessa K.', location: 'Ribeirão Preto, SP', timeAgo: 'há 38 minutos' },
+    { name: 'Beatriz D.', location: 'Fortaleza, CE', timeAgo: 'há 41 minutos' },
+  ],
 };

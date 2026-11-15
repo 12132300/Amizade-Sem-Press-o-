@@ -7,6 +7,7 @@ import {
   LANDING_CONFIG,
   buildCheckoutUrlWithUtms,
 } from '@/lib/landing-config';
+import { trackMetaEvent } from '@/components/landing/MetaPixelTracker';
 
 const emptySubscribe = () => () => {};
 
@@ -20,6 +21,15 @@ export function OfferSection() {
   );
 
   const finalCheckoutUrl = buildCheckoutUrlWithUtms(checkout.url, clientSearch);
+
+  const handleCheckoutClick = () => {
+    trackMetaEvent('InitiateCheckout', {
+      content_name: offer.productName,
+      content_type: 'product',
+      currency: 'BRL',
+      value: 19.9,
+    });
+  };
 
   return (
     <section
@@ -150,6 +160,7 @@ export function OfferSection() {
           {/* Botão para o checkout */}
           <a
             href={finalCheckoutUrl}
+            onClick={handleCheckoutClick}
             suppressHydrationWarning
             data-testid="checkout-button"
             className="w-full inline-flex items-center justify-center gap-2.5 bg-[#1F4333] hover:bg-[#163024] active:bg-[#12261d] active:scale-[0.98] text-white font-bold text-base sm:text-lg px-5 sm:px-6 py-4 rounded-xl shadow-md transition-all duration-150 text-center min-h-[54px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1F4333]"

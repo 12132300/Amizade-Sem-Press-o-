@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import { Fraunces, Plus_Jakarta_Sans } from 'next/font/google';
+import { MetaPixelTracker } from '@/components/landing/MetaPixelTracker';
 import './globals.css';
 
 const fraunces = Fraunces({
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className="min-h-screen bg-[#FAF7F2] text-[#1C2822] antialiased selection:bg-[#1F4333] selection:text-white"
         style={{ fontFamily: 'var(--font-sans), sans-serif' }}
       >
+        <MetaPixelTracker />
         {children}
       </body>
     </html>

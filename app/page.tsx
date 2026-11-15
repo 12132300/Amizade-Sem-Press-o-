@@ -8,6 +8,7 @@ import { OfferSection } from '@/components/landing/OfferSection';
 import { SocialProofCarousel } from '@/components/landing/SocialProofCarousel';
 import { FaqSection } from '@/components/landing/FaqSection';
 import { MinimalFooter } from '@/components/landing/MinimalFooter';
+import { PurchaseToast } from '@/components/landing/PurchaseToast';
 
 export default function LandingPage() {
   return (
@@ -38,6 +39,9 @@ export default function LandingPage() {
 
       {/* 9. FOOTER MINIMALISTA */}
       <MinimalFooter />
+
+      {/* 10. NOTIFICAÇÃO DISCRETA DE COMPRAS NO RODAPÉ */}
+      <PurchaseToast />
     </main>
   );
 }
